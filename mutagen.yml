@@ -1,0 +1,11 @@
+sync:
+  app:
+    mode: "two-way-resolved"
+    alpha: "/Users/takaaki/workspace"
+    beta: "takaaki:/home/vagrant/workspace"
+    ignore:
+      vcs: true
+      paths:
+        - "/node_modules"
+        - "/log"
+        - "/tmp"
