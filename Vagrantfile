@@ -18,7 +18,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.synced_folder '/Users/takaaki/workspace', '/home/vagrant/workspace', type: "rsync",
     rsync_auto: true,
-    rsync__exclude: ['.git/', 'node_modules/', 'log/', 'tmp/']
+    rsync__exclude: ['node_modules/', 'log/', 'tmp/']
 
   config.vm.provision :docker, run: 'always'
   config.vm.provision :docker_compose
