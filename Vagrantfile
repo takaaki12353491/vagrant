@@ -16,7 +16,7 @@ Vagrant.configure('2') do |config|
   config.disksize.size = '30GB'
   config.mutagen.orchestrate = true
 
-  config.vm.synced_folder '/Users/takaaki/workspace', '/home/vagrant/workspace', type: "rsync",
+  config.vm.synced_folder '/Users/takaaki/workspace', '/home/vagrant/workspace', type: "virtualbox",
     rsync_auto: true,
     rsync__exclude: ['node_modules/', 'log/', 'tmp/']
 
